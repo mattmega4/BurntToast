@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2935E84122605E0B004A18A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E84022605E0A004A18A7 /* AppDelegate.swift */; };
-		2935E84322605E0B004A18A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E84222605E0B004A18A7 /* ViewController.swift */; };
 		2935E84622605E0B004A18A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84422605E0B004A18A7 /* Main.storyboard */; };
 		2935E84822605E0C004A18A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84722605E0C004A18A7 /* Assets.xcassets */; };
 		2935E84B22605E0C004A18A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84922605E0C004A18A7 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		2935E83D22605E0A004A18A7 /* BurntToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurntToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2935E84022605E0A004A18A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2935E84222605E0B004A18A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2935E84522605E0B004A18A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2935E84722605E0C004A18A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2935E84A22605E0C004A18A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +95,12 @@
 		2935E83F22605E0A004A18A7 /* BurntToast */ = {
 			isa = PBXGroup;
 			children = (
-				2935E84022605E0A004A18A7 /* AppDelegate.swift */,
-				2935E84222605E0B004A18A7 /* ViewController.swift */,
-				2935E84422605E0B004A18A7 /* Main.storyboard */,
-				2935E84722605E0C004A18A7 /* Assets.xcassets */,
-				2935E84922605E0C004A18A7 /* LaunchScreen.storyboard */,
-				2935E84C22605E0C004A18A7 /* Info.plist */,
+				2935E87322605E7A004A18A7 /* Model */,
+				2935E87222605E77004A18A7 /* View */,
+				2935E87122605E72004A18A7 /* Controller */,
+				2935E87022605E70004A18A7 /* SupportingFiles */,
+				2935E86F22605E6D004A18A7 /* Extensions */,
+				2935E86E22605E69004A18A7 /* Keys */,
 			);
 			path = BurntToast;
 			sourceTree = "<group>";
@@ -123,6 +121,53 @@
 				2935E86222605E0C004A18A7 /* Info.plist */,
 			);
 			path = BurntToastUITests;
+			sourceTree = "<group>";
+		};
+		2935E86E22605E69004A18A7 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		2935E86F22605E6D004A18A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2935E87022605E70004A18A7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2935E84022605E0A004A18A7 /* AppDelegate.swift */,
+				2935E84722605E0C004A18A7 /* Assets.xcassets */,
+				2935E84922605E0C004A18A7 /* LaunchScreen.storyboard */,
+				2935E84C22605E0C004A18A7 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2935E87122605E72004A18A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2935E87222605E77004A18A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2935E84422605E0B004A18A7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2935E87322605E7A004A18A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2935E84322605E0B004A18A7 /* ViewController.swift in Sources */,
 				2935E84122605E0B004A18A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
-				INFOPLIST_FILE = BurntToast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BurntToast/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
-				INFOPLIST_FILE = BurntToast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BurntToast/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
