@@ -1,0 +1,6 @@
+framework module Pods_BurntToast {
+  umbrella header "Pods-BurntToast-umbrella.h"
+
+  export *
+  module * { export * }
+}
