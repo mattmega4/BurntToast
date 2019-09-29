@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Landing ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LandingScreenVC" customModule="BurntToast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gek-Lb-5CL" customClass="BottomContainer" customModule="BurntToast" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="749" width="1366" height="275"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrc-yx-q9N" customClass="DemoButton" customModule="BurntToast" customModuleProvider="target">
+                                        <rect key="frame" x="238" y="187.5" width="375" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="tgR-vR-b3V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="See How It Works">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iv-id-zSN" customClass="CreateButton" customModule="BurntToast" customModuleProvider="target">
+                                        <rect key="frame" x="238" y="92.5" width="375" height="70"/>
+                                        <color key="backgroundColor" red="0.7167392373" green="0.29647174479999999" blue="0.109675236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                        <state key="normal" title="Create Account"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-HU-rxw" customClass="LoginButton" customModule="BurntToast" customModuleProvider="target">
+                                        <rect key="frame" x="753" y="92.5" width="375" height="70"/>
+                                        <color key="backgroundColor" red="0.7167392373" green="0.29647174479999999" blue="0.109675236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="gO6-xW-578"/>
+                                            <constraint firstAttribute="width" constant="375" id="uRz-jU-t7d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Log In"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-bN-zqg">
+                                        <rect key="frame" x="613" y="92.5" width="140" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aeD-bN-zqg" secondAttribute="height" multiplier="2:1" id="iwR-to-Ipo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gek-Lb-5CL" secondAttribute="height" multiplier="1366:275" id="0C4-bv-mtY"/>
+                                    <constraint firstItem="fFt-HU-rxw" firstAttribute="centerY" secondItem="7Iv-id-zSN" secondAttribute="centerY" id="2d8-6Q-g5N"/>
+                                    <constraint firstItem="wrc-yx-q9N" firstAttribute="top" secondItem="7Iv-id-zSN" secondAttribute="bottom" constant="25" id="4fJ-Im-gPh"/>
+                                    <constraint firstItem="wrc-yx-q9N" firstAttribute="centerX" secondItem="7Iv-id-zSN" secondAttribute="centerX" id="CpV-6r-REL"/>
+                                    <constraint firstItem="7Iv-id-zSN" firstAttribute="centerY" secondItem="gek-Lb-5CL" secondAttribute="centerY" constant="-10" id="IyN-W4-oXO"/>
+                                    <constraint firstItem="fFt-HU-rxw" firstAttribute="height" secondItem="aeD-bN-zqg" secondAttribute="height" id="L0N-kZ-Zoz"/>
+                                    <constraint firstItem="fFt-HU-rxw" firstAttribute="width" secondItem="7Iv-id-zSN" secondAttribute="width" id="Lvc-RU-thf"/>
+                                    <constraint firstItem="aeD-bN-zqg" firstAttribute="centerX" secondItem="gek-Lb-5CL" secondAttribute="centerX" id="Ph4-F5-uIk"/>
+                                    <constraint firstItem="wrc-yx-q9N" firstAttribute="width" secondItem="7Iv-id-zSN" secondAttribute="width" id="W13-8n-bw9"/>
+                                    <constraint firstItem="fFt-HU-rxw" firstAttribute="height" secondItem="7Iv-id-zSN" secondAttribute="height" id="ihP-gR-ZHX"/>
+                                    <constraint firstItem="aeD-bN-zqg" firstAttribute="leading" secondItem="7Iv-id-zSN" secondAttribute="trailing" id="v8h-oo-Tym"/>
+                                    <constraint firstItem="fFt-HU-rxw" firstAttribute="centerY" secondItem="aeD-bN-zqg" secondAttribute="centerY" id="xvM-PE-3op"/>
+                                    <constraint firstItem="fFt-HU-rxw" firstAttribute="leading" secondItem="aeD-bN-zqg" secondAttribute="trailing" id="ya6-V9-vXT"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uy-L7-1ru">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="749"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burnt Toast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-ka-GUt">
+                                <rect key="frame" x="454" y="512" width="458.5" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2mx-ka-GUt" secondAttribute="height" multiplier="458:87" id="ap8-kR-Lsz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="75"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gek-Lb-5CL" secondAttribute="bottom" id="4vg-Pt-IAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7uy-L7-1ru" secondAttribute="trailing" id="9xh-Yb-kMA"/>
+                            <constraint firstItem="gek-Lb-5CL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W6I-CG-1tc"/>
+                            <constraint firstItem="7uy-L7-1ru" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YoN-dj-NS6"/>
+                            <constraint firstItem="gek-Lb-5CL" firstAttribute="top" secondItem="2mx-ka-GUt" secondAttribute="bottom" constant="150" id="aU3-IB-DN2"/>
+                            <constraint firstItem="7uy-L7-1ru" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gYI-0c-T7Z"/>
+                            <constraint firstItem="gek-Lb-5CL" firstAttribute="top" secondItem="7uy-L7-1ru" secondAttribute="bottom" id="iHj-PT-duO"/>
+                            <constraint firstItem="gek-Lb-5CL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j1L-kZ-eeX"/>
+                            <constraint firstItem="2mx-ka-GUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPl-S2-T8H"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="7uy-L7-1ru" id="9AP-dP-g1H"/>
+                        <outlet property="createAccountButton" destination="7Iv-id-zSN" id="0Ri-bp-eD1"/>
+                        <outlet property="demonstrationButton" destination="wrc-yx-q9N" id="m0L-Lc-ABT"/>
+                        <outlet property="logInButton" destination="fFt-HU-rxw" id="YxA-Dx-zBA"/>
+                        <outlet property="lowerViewContainer" destination="gek-Lb-5CL" id="R9o-lM-b0F"/>
+                        <outlet property="titleLabel" destination="2mx-ka-GUt" id="aXt-mh-k6Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.79941434846265" y="127.73437499999999"/>
         </scene>
     </scenes>
 </document>

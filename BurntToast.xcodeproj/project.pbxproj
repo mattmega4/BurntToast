@@ -14,9 +14,15 @@
 		2935E84B22605E0C004A18A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84922605E0C004A18A7 /* LaunchScreen.storyboard */; };
 		2935E85622605E0C004A18A7 /* BurntToastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E85522605E0C004A18A7 /* BurntToastTests.swift */; };
 		2935E86122605E0C004A18A7 /* BurntToastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E86022605E0C004A18A7 /* BurntToastUITests.swift */; };
-		297F017E22606375003BE1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297F017D22606375003BE1CB /* GoogleService-Info.plist */; };
-		297F017F22606375003BE1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297F017D22606375003BE1CB /* GoogleService-Info.plist */; };
-		297F018022606375003BE1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297F017D22606375003BE1CB /* GoogleService-Info.plist */; };
+		298214452340532A00DD7D71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 298214442340532A00DD7D71 /* GoogleService-Info.plist */; };
+		2982144723405B6400DD7D71 /* LandingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982144623405B6400DD7D71 /* LandingScreenVC.swift */; };
+		2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982144823405FB900DD7D71 /* UIView+Extensions.swift */; };
+		298214512340669200DD7D71 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298214502340669200DD7D71 /* CreateButton.swift */; };
+		298214542340674100DD7D71 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298214532340674100DD7D71 /* LoginButton.swift */; };
+		29821456234069D600DD7D71 /* DemoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29821455234069D600DD7D71 /* DemoButton.swift */; };
+		2982145823406A4500DD7D71 /* BottomContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145723406A4400DD7D71 /* BottomContainer.swift */; };
+		2982145C23407B0900DD7D71 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */; };
+		2982145E23407BD900DD7D71 /* TitleOverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145D23407BD900DD7D71 /* TitleOverImage.swift */; };
 		A45F96AFA5FDD8B4E73751D1 /* Pods_BurntToastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8A5D35D7B32B63F4364136 /* Pods_BurntToastUITests.framework */; };
 		F4D19CAB72BCA8CE4614E95A /* Pods_BurntToastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB238B9D0C1A465A1721EF3 /* Pods_BurntToastTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,7 +59,15 @@
 		2935E85C22605E0C004A18A7 /* BurntToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurntToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2935E86022605E0C004A18A7 /* BurntToastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurntToastUITests.swift; sourceTree = "<group>"; };
 		2935E86222605E0C004A18A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		297F017D22606375003BE1CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		298214442340532A00DD7D71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2982144623405B6400DD7D71 /* LandingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenVC.swift; sourceTree = "<group>"; };
+		2982144823405FB900DD7D71 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		298214502340669200DD7D71 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
+		298214532340674100DD7D71 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		29821455234069D600DD7D71 /* DemoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoButton.swift; sourceTree = "<group>"; };
+		2982145723406A4400DD7D71 /* BottomContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomContainer.swift; sourceTree = "<group>"; };
+		2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		2982145D23407BD900DD7D71 /* TitleOverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOverImage.swift; sourceTree = "<group>"; };
 		7B8A5D35D7B32B63F4364136 /* Pods_BurntToastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABDA0BA76A91FCC3D3B2C10 /* Pods_BurntToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4D4B2FA335874E3943A72F /* Pods-BurntToastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurntToastTests.debug.xcconfig"; path = "Target Support Files/Pods-BurntToastTests/Pods-BurntToastTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +168,8 @@
 		2935E86F22605E6D004A18A7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2982144823405FB900DD7D71 /* UIView+Extensions.swift */,
+				2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,7 +181,7 @@
 				2935E84722605E0C004A18A7 /* Assets.xcassets */,
 				2935E84922605E0C004A18A7 /* LaunchScreen.storyboard */,
 				2935E84C22605E0C004A18A7 /* Info.plist */,
-				297F017D22606375003BE1CB /* GoogleService-Info.plist */,
+				298214442340532A00DD7D71 /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -173,6 +189,7 @@
 		2935E87122605E72004A18A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2982144623405B6400DD7D71 /* LandingScreenVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				2935E84422605E0B004A18A7 /* Main.storyboard */,
+				298214522340669800DD7D71 /* LandingVC */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +208,18 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		298214522340669800DD7D71 /* LandingVC */ = {
+			isa = PBXGroup;
+			children = (
+				2982145D23407BD900DD7D71 /* TitleOverImage.swift */,
+				298214502340669200DD7D71 /* CreateButton.swift */,
+				2982145723406A4400DD7D71 /* BottomContainer.swift */,
+				298214532340674100DD7D71 /* LoginButton.swift */,
+				29821455234069D600DD7D71 /* DemoButton.swift */,
+			);
+			path = LandingVC;
 			sourceTree = "<group>";
 		};
 		7CAF1484BF3F36E359769BED /* Frameworks */ = {
@@ -325,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2935E84B22605E0C004A18A7 /* LaunchScreen.storyboard in Resources */,
-				297F017E22606375003BE1CB /* GoogleService-Info.plist in Resources */,
+				298214452340532A00DD7D71 /* GoogleService-Info.plist in Resources */,
 				2935E84822605E0C004A18A7 /* Assets.xcassets in Resources */,
 				2935E84622605E0B004A18A7 /* Main.storyboard in Resources */,
 			);
@@ -335,7 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297F017F22606375003BE1CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +372,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				297F018022606375003BE1CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +486,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */,
+				2982145C23407B0900DD7D71 /* UIButton+Extensions.swift in Sources */,
+				2982145E23407BD900DD7D71 /* TitleOverImage.swift in Sources */,
+				298214542340674100DD7D71 /* LoginButton.swift in Sources */,
+				298214512340669200DD7D71 /* CreateButton.swift in Sources */,
+				2982145823406A4500DD7D71 /* BottomContainer.swift in Sources */,
+				2982144723405B6400DD7D71 /* LandingScreenVC.swift in Sources */,
 				2935E84122605E0B004A18A7 /* AppDelegate.swift in Sources */,
+				29821456234069D600DD7D71 /* DemoButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +680,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewhsingleton.BurntToast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -663,7 +699,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.matthewhsingleton.BurntToast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

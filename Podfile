@@ -7,17 +7,13 @@ target 'BurntToast' do
 
   # Pods for BurntToast
 
-  pod 'Fabric', '~> 1.9.0'
-  pod 'Crashlytics', '~> 3.12.0'
-  pod 'Branch'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
-  pod 'Firebase/Core'
-  pod 'Firebase/Storage'
-  pod 'Firebase/Messaging'
   pod 'Firebase/Auth'
-  pod 'Firebase/Database'
-  pod 'Firebase/Performance'
-
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
   pod 'Kingfisher'
   #pod 'SCPinViewController'
@@ -26,6 +22,9 @@ target 'BurntToast' do
   pod 'DZNEmptyDataSet'
   #pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
   pod 'MBProgressHUD'
+  pod 'AcknowList'
+  pod 'ChameleonFramework/Swift'
+  pod 'MarqueeLabel'
 
   target 'BurntToastTests' do
     inherit! :search_paths
