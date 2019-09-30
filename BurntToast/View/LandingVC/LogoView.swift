@@ -20,14 +20,11 @@ class LogoView: UIView {
 
     override func awakeFromNib() {
     super.awakeFromNib()
-
       customizeView()
   }
 
   func customizeView() {
-    backgroundColor = FlatWhite()
     self.createCircle()
-    layer.borderWidth = 5
-    layer.borderColor = FlatBlack().cgColor //red.cgColor
+    addBorderToView(color: FlatWhite(), borderColor: FlatBlack().cgColor, borderWidth: 5)
   }
 }

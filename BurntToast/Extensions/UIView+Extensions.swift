@@ -23,6 +23,12 @@ extension UIView {
     clipsToBounds = true
   }
 
+  public func addBorderToView(color: UIColor, borderColor: CGColor, borderWidth: CGFloat) {
+    backgroundColor = color
+    layer.borderColor = borderColor
+    layer.borderWidth = borderWidth
+  }
+
   public func addBlurToView(blurColor: UIColor) {
     var blurEffect: UIBlurEffect
     if #available(iOS 10.0, *) {
@@ -32,7 +38,6 @@ extension UIView {
     }
     let blurredEffectView = UIVisualEffectView(effect: blurEffect)
     blurredEffectView.frame = self.bounds
-//    backgroundColor = UIColor.black.withAlphaComponent(0.5)
     backgroundColor = blurColor.withAlphaComponent(0.5)
     blurredEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     self.addSubview(blurredEffectView)
@@ -45,5 +50,8 @@ extension UIView {
       }
     }
   }
+
+
+
 }
 
