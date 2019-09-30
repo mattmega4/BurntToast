@@ -19,10 +19,9 @@
 		2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982144823405FB900DD7D71 /* UIView+Extensions.swift */; };
 		298214512340669200DD7D71 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298214502340669200DD7D71 /* CreateButton.swift */; };
 		298214542340674100DD7D71 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298214532340674100DD7D71 /* LoginButton.swift */; };
-		29821456234069D600DD7D71 /* DemoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29821455234069D600DD7D71 /* DemoButton.swift */; };
 		2982145823406A4500DD7D71 /* BottomContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145723406A4400DD7D71 /* BottomContainer.swift */; };
 		2982145C23407B0900DD7D71 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */; };
-		2982145E23407BD900DD7D71 /* TitleOverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145D23407BD900DD7D71 /* TitleOverImage.swift */; };
+		29B4F8A72341F78900EB8FCA /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4F8A62341F78900EB8FCA /* LogoView.swift */; };
 		A45F96AFA5FDD8B4E73751D1 /* Pods_BurntToastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8A5D35D7B32B63F4364136 /* Pods_BurntToastUITests.framework */; };
 		F4D19CAB72BCA8CE4614E95A /* Pods_BurntToastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB238B9D0C1A465A1721EF3 /* Pods_BurntToastTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,10 +63,9 @@
 		2982144823405FB900DD7D71 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		298214502340669200DD7D71 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 		298214532340674100DD7D71 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		29821455234069D600DD7D71 /* DemoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoButton.swift; sourceTree = "<group>"; };
 		2982145723406A4400DD7D71 /* BottomContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomContainer.swift; sourceTree = "<group>"; };
 		2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
-		2982145D23407BD900DD7D71 /* TitleOverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOverImage.swift; sourceTree = "<group>"; };
+		29B4F8A62341F78900EB8FCA /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		7B8A5D35D7B32B63F4364136 /* Pods_BurntToastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABDA0BA76A91FCC3D3B2C10 /* Pods_BurntToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4D4B2FA335874E3943A72F /* Pods-BurntToastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurntToastTests.debug.xcconfig"; path = "Target Support Files/Pods-BurntToastTests/Pods-BurntToastTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,11 +211,10 @@
 		298214522340669800DD7D71 /* LandingVC */ = {
 			isa = PBXGroup;
 			children = (
-				2982145D23407BD900DD7D71 /* TitleOverImage.swift */,
-				298214502340669200DD7D71 /* CreateButton.swift */,
 				2982145723406A4400DD7D71 /* BottomContainer.swift */,
+				29B4F8A62341F78900EB8FCA /* LogoView.swift */,
 				298214532340674100DD7D71 /* LoginButton.swift */,
-				29821455234069D600DD7D71 /* DemoButton.swift */,
+				298214502340669200DD7D71 /* CreateButton.swift */,
 			);
 			path = LandingVC;
 			sourceTree = "<group>";
@@ -488,13 +485,12 @@
 			files = (
 				2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */,
 				2982145C23407B0900DD7D71 /* UIButton+Extensions.swift in Sources */,
-				2982145E23407BD900DD7D71 /* TitleOverImage.swift in Sources */,
 				298214542340674100DD7D71 /* LoginButton.swift in Sources */,
 				298214512340669200DD7D71 /* CreateButton.swift in Sources */,
 				2982145823406A4500DD7D71 /* BottomContainer.swift in Sources */,
+				29B4F8A72341F78900EB8FCA /* LogoView.swift in Sources */,
 				2982144723405B6400DD7D71 /* LandingScreenVC.swift in Sources */,
 				2935E84122605E0B004A18A7 /* AppDelegate.swift in Sources */,
-				29821456234069D600DD7D71 /* DemoButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
 				INFOPLIST_FILE = "$(SRCROOT)/BurntToast/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

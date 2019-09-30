@@ -1,17 +1,18 @@
 //
-//  DemoButton.swift
+//  LogoView.swift
 //  BurntToast
 //
-//  Created by Matthew Howes Singleton on 9/28/19.
+//  Created by Matthew Howes Singleton on 9/30/19.
 //  Copyright © 2019 Matthew Howes Singleton. All rights reserved.
 //
+
 
 import UIKit
 import ChameleonFramework
 
 
 @IBDesignable
-class DemoButton: UIButton {
+class LogoView: UIView {
 
   override func prepareForInterfaceBuilder() {
     customizeView()
@@ -24,10 +25,9 @@ class DemoButton: UIButton {
   }
 
   func customizeView() {
-    setTitleColor(ContrastColorOf(backgroundColor: FlatWhite(), returnFlat: true), for: .normal)
-    titleLabel?.font = UIFont(name: "GillSans", size: 24)
-    setTitle("SEE DEMONSTRATION", for: .normal)
+    backgroundColor = FlatWhite()
+    self.createCircle()
+    layer.borderWidth = 5
+    layer.borderColor = FlatBlack().cgColor //red.cgColor
   }
-
 }
-

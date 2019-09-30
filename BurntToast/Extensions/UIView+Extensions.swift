@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import ChameleonFramework
 
 extension UIView {
 
@@ -17,7 +18,32 @@ extension UIView {
     clipsToBounds = true
   }
 
+  public func createCircle() {
+    layer.cornerRadius = frame.size.width/2
+    clipsToBounds = true
+  }
 
+  public func addBlurToView(blurColor: UIColor) {
+    var blurEffect: UIBlurEffect
+    if #available(iOS 10.0, *) {
+      blurEffect = UIBlurEffect(style: .dark)
+    } else {
+      blurEffect = UIBlurEffect(style: .light)
+    }
+    let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+    blurredEffectView.frame = self.bounds
+//    backgroundColor = UIColor.black.withAlphaComponent(0.5)
+    backgroundColor = blurColor.withAlphaComponent(0.5)
+    blurredEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    self.addSubview(blurredEffectView)
+  }
 
+  public func removeBlurFromView() {
+    for subview in self.subviews {
+      if subview is UIVisualEffectView {
+        subview.removeFromSuperview()
+      }
+    }
+  }
 }
 

@@ -12,26 +12,28 @@ import ChameleonFramework
 class LandingScreenVC: UIViewController {
 
   @IBOutlet weak var backgroundImageView: UIImageView!
-  @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var lowerViewContainer: UIView!
-  @IBOutlet weak var createAccountButton: UIButton!
-  @IBOutlet weak var logInButton: UIButton!
-  @IBOutlet weak var demonstrationButton: UIButton!
+
+  @IBOutlet weak var logoView: UIView!
+
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    // Do any additional setup after loading the view.
+
+    loadDesignChanges()
+
+    setNeedsStatusBarAppearanceUpdate()
+    var preferredStatusBarStyle : UIStatusBarStyle {
+      return .lightContent
+    }
+  }
+
   
 
-
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-
-        loadDesignChanges()
-    }
-
   func loadDesignChanges() {
-    createAccountButton.createShadow()
-    logInButton.createShadow()
+
   }
 
 

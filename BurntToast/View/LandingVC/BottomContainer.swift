@@ -24,6 +24,6 @@ class BottomContainer: UIView {
   }
 
   func customizeView() {
-    backgroundColor = FlatWhite()
+    addBlurToView(blurColor: FlatBlueDark())
   }
 }

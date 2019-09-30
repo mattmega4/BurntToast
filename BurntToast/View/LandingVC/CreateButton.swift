@@ -30,4 +30,11 @@ class CreateButton: UIButton {
     roundedCorners()
   }
 
+  func blurrr(view: UIView) {
+    let blurEffect = UIBlurEffect(style: .dark)
+    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+    view.addSubview(blurEffectView)
+  }
+
+
 }
