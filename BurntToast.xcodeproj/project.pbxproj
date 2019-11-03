@@ -18,6 +18,7 @@
 		2935E84B22605E0C004A18A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84922605E0C004A18A7 /* LaunchScreen.storyboard */; };
 		2935E85622605E0C004A18A7 /* BurntToastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E85522605E0C004A18A7 /* BurntToastTests.swift */; };
 		2935E86122605E0C004A18A7 /* BurntToastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E86022605E0C004A18A7 /* BurntToastUITests.swift */; };
+		295E790E236F9404006FE93E /* AcknowledgementsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295E790D236F9404006FE93E /* AcknowledgementsList.swift */; };
 		298214452340532A00DD7D71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 298214442340532A00DD7D71 /* GoogleService-Info.plist */; };
 		2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982144823405FB900DD7D71 /* UIView+Extensions.swift */; };
 		298214512340669200DD7D71 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298214502340669200DD7D71 /* CreateButton.swift */; };
@@ -66,6 +67,7 @@
 		2935E85C22605E0C004A18A7 /* BurntToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurntToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2935E86022605E0C004A18A7 /* BurntToastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurntToastUITests.swift; sourceTree = "<group>"; };
 		2935E86222605E0C004A18A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		295E790D236F9404006FE93E /* AcknowledgementsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsList.swift; sourceTree = "<group>"; };
 		298214442340532A00DD7D71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2982144823405FB900DD7D71 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		298214502340669200DD7D71 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				2935E87022605E70004A18A7 /* SupportingFiles */,
 				2935E86F22605E6D004A18A7 /* Extensions */,
 				2935E86E22605E69004A18A7 /* Keys */,
+				295E790C236F93DC006FE93E /* Acknowledgements */,
 			);
 			path = BurntToast;
 			sourceTree = "<group>";
@@ -234,6 +237,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		295E790C236F93DC006FE93E /* Acknowledgements */ = {
+			isa = PBXGroup;
+			children = (
+				295E790D236F9404006FE93E /* AcknowledgementsList.swift */,
+			);
+			path = Acknowledgements;
 			sourceTree = "<group>";
 		};
 		298214522340669800DD7D71 /* LoginVC */ = {
@@ -512,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295E790E236F9404006FE93E /* AcknowledgementsList.swift in Sources */,
 				29A838F8236D5DA9008A37D2 /* LoginViewController.swift in Sources */,
 				2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */,
 				2909DD5F236F7F8600B24AB2 /* WalkthroughPageViewController.swift in Sources */,

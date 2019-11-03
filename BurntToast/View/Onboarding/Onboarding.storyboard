@@ -18,7 +18,7 @@
         <!--Walkthrough Content View Controller-->
         <scene sceneID="NyO-tS-QiP">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughContentViewController" id="8jU-Ms-CBa" customClass="WalkthroughContentViewController" customModule="BurntToast" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughContentViewController" modalPresentationStyle="fullScreen" id="8jU-Ms-CBa" customClass="WalkthroughContentViewController" customModule="BurntToast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mEl-ea-dHm">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="512"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

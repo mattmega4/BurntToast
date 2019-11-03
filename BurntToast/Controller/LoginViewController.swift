@@ -26,8 +26,15 @@ class LoginViewController: UIViewController {
 
 
   override func viewDidAppear(_ animated: Bool) {
+
+    if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
+      return
+    }
+
+
     let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
     if let walkthroughViewController = storyboard.instantiateViewController(identifier: "WalkthroughViewController") as? WalkthroughViewController {
+      walkthroughViewController.modalPresentationStyle = .fullScreen
       present(walkthroughViewController, animated: true, completion: nil)
     }
   }
