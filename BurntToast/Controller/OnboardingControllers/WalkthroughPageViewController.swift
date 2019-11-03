@@ -1,0 +1,70 @@
+//
+//  WalkthroughPageViewController.swift
+//  BurntToast
+//
+//  Created by Matthew Howes Singleton on 11/3/19.
+//  Copyright © 2019 Matthew Howes Singleton. All rights reserved.
+//
+
+import UIKit
+
+class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource  {
+
+  // MARK: - Properties
+
+  var pageHeadings = ["1", "2", "3"]
+  var pageSubheadings = ["One", "Two", "Three"]
+  var currentIndex = 0
+
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+
+    dataSource = self
+
+
+    if let startingViewController = contentViewController(at: 0) {
+      setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
+    }
+  }
+
+  // MARK: - Page View Controller Data Source
+
+
+  func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    var index = (viewController as! WalkthroughContentViewController).index
+    index -= 1
+
+    return contentViewController(at: index)
+  }
+
+  func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    var index = (viewController as! WalkthroughContentViewController).index
+    index += 1
+
+    return contentViewController(at: index)
+  }
+
+
+  //MARK: - Helper
+
+  func contentViewController(at index: Int) -> WalkthroughContentViewController? {
+    if index < 0 || index >= pageHeadings.count {
+      return nil
+    }
+
+    // Create a new view controller and pass suitable data
+    let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+      if let pageContentViewController = storyboard.instantiateViewController(identifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {
+        //        pageContentViewController.imageFile = pageImages[index]
+        pageContentViewController.heading = pageHeadings[index]
+        pageContentViewController.subHeading = pageHeadings[index]
+        pageContentViewController.index = index
+
+        return pageContentViewController
+      }
+       return nil
+  }
+
+}

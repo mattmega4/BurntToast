@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		127408302D47A47610C604E6 /* Pods_BurntToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABDA0BA76A91FCC3D3B2C10 /* Pods_BurntToast.framework */; };
+		2909DD5B236F774400B24AB2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2909DD5A236F774400B24AB2 /* Onboarding.storyboard */; };
+		2909DD5D236F7D1D00B24AB2 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909DD5C236F7D1D00B24AB2 /* WalkthroughContentViewController.swift */; };
+		2909DD5F236F7F8600B24AB2 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909DD5E236F7F8600B24AB2 /* WalkthroughPageViewController.swift */; };
+		2909DD61236F857C00B24AB2 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909DD60236F857C00B24AB2 /* WalkthroughViewController.swift */; };
 		2935E84122605E0B004A18A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E84022605E0A004A18A7 /* AppDelegate.swift */; };
 		2935E84622605E0B004A18A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84422605E0B004A18A7 /* Main.storyboard */; };
 		2935E84822605E0C004A18A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935E84722605E0C004A18A7 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		0FB238B9D0C1A465A1721EF3 /* Pods_BurntToastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EA3036323A21114E4D1819 /* Pods-BurntToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurntToast.debug.xcconfig"; path = "Target Support Files/Pods-BurntToast/Pods-BurntToast.debug.xcconfig"; sourceTree = "<group>"; };
+		2909DD5A236F774400B24AB2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		2909DD5C236F7D1D00B24AB2 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		2909DD5E236F7F8600B24AB2 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		2909DD60236F857C00B24AB2 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		2935E83D22605E0A004A18A7 /* BurntToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurntToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2935E84022605E0A004A18A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2935E84522605E0B004A18A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2909DD52236F6EBA00B24AB2 /* OnboardingControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2909DD5C236F7D1D00B24AB2 /* WalkthroughContentViewController.swift */,
+				2909DD5E236F7F8600B24AB2 /* WalkthroughPageViewController.swift */,
+				2909DD60236F857C00B24AB2 /* WalkthroughViewController.swift */,
+			);
+			path = OnboardingControllers;
+			sourceTree = "<group>";
+		};
+		2909DD53236F6EC400B24AB2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2909DD5A236F774400B24AB2 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		2935E83422605E0A004A18A7 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +213,7 @@
 		2935E87122605E72004A18A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2909DD52236F6EBA00B24AB2 /* OnboardingControllers */,
 				29A838F7236D5DA9008A37D2 /* LoginViewController.swift */,
 			);
 			path = Controller;
@@ -196,7 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				2935E84422605E0B004A18A7 /* Main.storyboard */,
-				298214522340669800DD7D71 /* LandingVC */,
+				298214522340669800DD7D71 /* LoginVC */,
+				2909DD53236F6EC400B24AB2 /* Onboarding */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,7 +236,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		298214522340669800DD7D71 /* LandingVC */ = {
+		298214522340669800DD7D71 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
 				2982145723406A4400DD7D71 /* BottomContainer.swift */,
@@ -216,7 +244,7 @@
 				298214532340674100DD7D71 /* LoginButton.swift */,
 				298214502340669200DD7D71 /* CreateButton.swift */,
 			);
-			path = LandingVC;
+			path = LoginVC;
 			sourceTree = "<group>";
 		};
 		7CAF1484BF3F36E359769BED /* Frameworks */ = {
@@ -352,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2935E84B22605E0C004A18A7 /* LaunchScreen.storyboard in Resources */,
+				2909DD5B236F774400B24AB2 /* Onboarding.storyboard in Resources */,
 				298214452340532A00DD7D71 /* GoogleService-Info.plist in Resources */,
 				2935E84822605E0C004A18A7 /* Assets.xcassets in Resources */,
 				2935E84622605E0B004A18A7 /* Main.storyboard in Resources */,
@@ -485,12 +514,15 @@
 			files = (
 				29A838F8236D5DA9008A37D2 /* LoginViewController.swift in Sources */,
 				2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */,
+				2909DD5F236F7F8600B24AB2 /* WalkthroughPageViewController.swift in Sources */,
 				2982145C23407B0900DD7D71 /* UIButton+Extensions.swift in Sources */,
 				298214542340674100DD7D71 /* LoginButton.swift in Sources */,
 				298214512340669200DD7D71 /* CreateButton.swift in Sources */,
 				2982145823406A4500DD7D71 /* BottomContainer.swift in Sources */,
+				2909DD5D236F7D1D00B24AB2 /* WalkthroughContentViewController.swift in Sources */,
 				29B4F8A72341F78900EB8FCA /* LogoView.swift in Sources */,
 				2935E84122605E0B004A18A7 /* AppDelegate.swift in Sources */,
+				2909DD61236F857C00B24AB2 /* WalkthroughViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +702,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
 				INFOPLIST_FILE = "$(SRCROOT)/BurntToast/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,6 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
 				INFOPLIST_FILE = "$(SRCROOT)/BurntToast/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

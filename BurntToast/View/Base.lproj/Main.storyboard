@@ -53,7 +53,6 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="7uy-L7-1ru" id="R7z-EI-agc"/>
-                        <outlet property="logoView" destination="b4J-HV-SZU" id="Zr4-CD-8O6"/>
                         <outlet property="lowerViewContainer" destination="gek-Lb-5CL" id="Qlf-mF-uPF"/>
                     </connections>
                 </viewController>
