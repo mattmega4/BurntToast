@@ -67,4 +67,18 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
        return nil
   }
 
+  func forwardPage() {
+    currentIndex += 1
+    if let nextViewController = contentViewController(at: currentIndex) {
+      setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+    }
+  }
+
+  func reversePage() {
+    currentIndex -= 1
+    if let previousViewController = contentViewController(at: currentIndex) {
+      setViewControllers([previousViewController], direction: .reverse, animated: true, completion: nil)
+    }
+  }
+
 }
