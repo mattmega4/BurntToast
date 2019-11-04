@@ -157,6 +157,7 @@
                         <outlet property="nextButton" destination="Heh-Ii-DgB" id="xH3-iB-Etp"/>
                         <outlet property="pageControl" destination="BN3-Rx-stG" id="4ki-7w-0Xr"/>
                         <outlet property="skipButton" destination="Hl8-6v-3cf" id="rYy-PP-5An"/>
+                        <outlet property="theView" destination="N8f-gG-Fde" id="ZOf-wv-FUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaC-lX-osg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

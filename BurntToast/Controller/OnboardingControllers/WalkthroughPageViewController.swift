@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 protocol WalkthroughPageViewControllerDelegate: class {
   func didUpdatePageIndex(currentIndex: Int)
+
 }
 
 class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate{
@@ -21,11 +23,13 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
   var pageImages = ["picOne.jpg", "picTwo.jpg", "picThree.jpg", "picFour.jpg"]
   var pageHeadings = ["KITTY", "CUTENESS", "CUTE!", "KITTEN"]
   var pageSubheadings = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur tortor sit amet mattis pharetra. Sed sit amet libero quis augue scelerisque molestie tempor eu urna. Praesent vestibulum dignissim ", "e pharetra vehicula ante, sit amet hendrerit mauris ultricies a. Morbi dictum nibh vitae lacus vulputate, sed commodo urna pellentesque. Maecenas e", "um ac arcu eu, finibus fringilla tellus. Quisque vehicula gravida tempor. In vestibulum lorem quis nulla mollis, vitae malesuada nulla mattis. Cras tur", "itae lacus vulputate, sed commodo urna pellentesque. Maecenas e", "um ac arcu eu, finibus fringilla tellus. Quisque vehicula gravida tempor. In vestibulum lorem quis nu"]
+  var pageBackgroundColorArray = [FlatBlack(), FlatPlum(), FlatSand(), FlatLime()]
   var currentIndex = 0
 
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
 
     dataSource = self
     delegate = self
@@ -53,6 +57,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
 
   //MARK: - Helper
 
+
   func contentViewController(at index: Int) -> WalkthroughContentViewController? {
     if index < 0 || index >= pageHeadings.count {
       return nil
@@ -60,14 +65,18 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
 
     // Create a new view controller and pass suitable data
     let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+
+
     if let pageContentViewController = storyboard.instantiateViewController(identifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {
       pageContentViewController.imageFile = pageImages[index]
       pageContentViewController.heading = pageHeadings[index]
       pageContentViewController.subHeading = pageSubheadings[index]
+      pageContentViewController.backgroundColor = pageBackgroundColorArray[index]
+      pageContentViewController.textColor = UIColor(contrastingBlackOrWhiteColorOn: pageBackgroundColorArray[index], isFlat: true)
       pageContentViewController.index = index
-
       return pageContentViewController
     }
+
     return nil
   }
 
@@ -78,12 +87,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     }
   }
 
-  func reversePage() {
-    currentIndex -= 1
-    if let previousViewController = contentViewController(at: currentIndex) {
-      setViewControllers([previousViewController], direction: .reverse, animated: true, completion: nil)
-    }
-  }
+
 
   //MARK: - Page View Controller Delegate
 

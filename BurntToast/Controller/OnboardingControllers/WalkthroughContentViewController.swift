@@ -21,23 +21,33 @@ class WalkthroughContentViewController: UIViewController {
   // MARK: - Properties
 
   var index = 0
+
   var heading = ""
+  var headingColor: UIColor?
+
   var subHeading = ""
+  var subHeadingColor: UIColor?
+
   var imageFile = ""
+  var backgroundColor: UIColor?
+  var textColor: UIColor?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      containerView.backgroundColor = FlatSand()
-      
 
       headingLabel.numberOfLines = 0
       subHeadingLabel.numberOfLines = 0
 
       headingLabel.text = heading
+      headingLabel.textColor = textColor
+
       subHeadingLabel.text = subHeading
+      subHeadingLabel.textColor = textColor
+
       contentImageView.image = UIImage(named: imageFile)
+      containerView.backgroundColor = backgroundColor
     }
     
 

@@ -11,8 +11,11 @@ import ChameleonFramework
 
 class WalkthroughViewController: UIViewController, WalkthroughPageViewControllerDelegate {
 
+
+
   //MARK: - Outlets
 
+  @IBOutlet var theView: UIView!
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var pageControl: UIPageControl!
   @IBOutlet weak var nextButton: UIButton!
@@ -20,17 +23,14 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
 
   //MARK: - Properties
 
+  var backgroundColor: UIColor?
+  
   var walkthroughPageViewController: WalkthroughPageViewController?
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    containerView.backgroundColor = FlatSand()
-    setNeedsStatusBarAppearanceUpdate()
-    var preferredStatusBarStyle : UIStatusBarStyle {
-      return .darkContent
-    }
-    // Do any additional setup after loading the view.
+    theView.backgroundColor = .black
   }
 
   func updateUI() {
@@ -51,6 +51,8 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
   func didUpdatePageIndex(currentIndex: Int) {
     updateUI()
   }
+
+
 
   @IBAction func nextButtonTapped(_ sender: UIButton) {
     if let index = walkthroughPageViewController?.currentIndex {
