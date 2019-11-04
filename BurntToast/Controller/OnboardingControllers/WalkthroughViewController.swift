@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class WalkthroughViewController: UIViewController, WalkthroughPageViewControllerDelegate {
 
   //MARK: - Outlets
 
+  @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var pageControl: UIPageControl!
   @IBOutlet weak var nextButton: UIButton!
   @IBOutlet weak var skipButton: UIButton!
@@ -23,6 +25,11 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    containerView.backgroundColor = FlatSand()
+    setNeedsStatusBarAppearanceUpdate()
+    var preferredStatusBarStyle : UIStatusBarStyle {
+      return .darkContent
+    }
     // Do any additional setup after loading the view.
   }
 

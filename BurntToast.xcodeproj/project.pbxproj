@@ -27,6 +27,7 @@
 		2982145C23407B0900DD7D71 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */; };
 		29A838F8236D5DA9008A37D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A838F7236D5DA9008A37D2 /* LoginViewController.swift */; };
 		29B4F8A72341F78900EB8FCA /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4F8A62341F78900EB8FCA /* LogoView.swift */; };
+		29C6742D236FD97E0048E4B8 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C6742C236FD97E0048E4B8 /* NextButton.swift */; };
 		A45F96AFA5FDD8B4E73751D1 /* Pods_BurntToastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8A5D35D7B32B63F4364136 /* Pods_BurntToastUITests.framework */; };
 		F4D19CAB72BCA8CE4614E95A /* Pods_BurntToastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB238B9D0C1A465A1721EF3 /* Pods_BurntToastTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		2982145B23407B0900DD7D71 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		29A838F7236D5DA9008A37D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29B4F8A62341F78900EB8FCA /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		29C6742C236FD97E0048E4B8 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		7B8A5D35D7B32B63F4364136 /* Pods_BurntToastUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToastUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABDA0BA76A91FCC3D3B2C10 /* Pods_BurntToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurntToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4D4B2FA335874E3943A72F /* Pods-BurntToastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurntToastTests.debug.xcconfig"; path = "Target Support Files/Pods-BurntToastTests/Pods-BurntToastTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				2909DD5A236F774400B24AB2 /* Onboarding.storyboard */,
+				29C6742C236FD97E0048E4B8 /* NextButton.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C6742D236FD97E0048E4B8 /* NextButton.swift in Sources */,
 				295E790E236F9404006FE93E /* AcknowledgementsList.swift in Sources */,
 				29A838F8236D5DA9008A37D2 /* LoginViewController.swift in Sources */,
 				2982144923405FB900DD7D71 /* UIView+Extensions.swift in Sources */,

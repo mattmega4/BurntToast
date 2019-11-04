@@ -7,17 +7,16 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class WalkthroughContentViewController: UIViewController {
 
   // MARK: - Outlets
 
+  @IBOutlet var containerView: UIView!
   @IBOutlet weak var contentImageView: UIImageView!
-
   @IBOutlet weak var headingLabel: UILabel!
-
   @IBOutlet weak var subHeadingLabel: UILabel!
-
 
   // MARK: - Properties
 
@@ -27,9 +26,11 @@ class WalkthroughContentViewController: UIViewController {
   var imageFile = ""
 
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
+
+      containerView.backgroundColor = FlatSand()
+      
 
       headingLabel.numberOfLines = 0
       subHeadingLabel.numberOfLines = 0
@@ -39,15 +40,5 @@ class WalkthroughContentViewController: UIViewController {
       contentImageView.image = UIImage(named: imageFile)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
